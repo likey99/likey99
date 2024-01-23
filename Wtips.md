@@ -20,6 +20,8 @@ export ZSH_2000_DISABLE_RVM='true'
 # theme powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ZSH_THEME="powerlevel10k/powerlevel10k"
+# plugins
+plugins=(git z zsh-syntax-highlighting zsh-autosuggestions extract cp aliases command-not-found compleat thefuck)
 ```
 
 ## 实用命令 
