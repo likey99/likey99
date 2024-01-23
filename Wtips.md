@@ -14,9 +14,12 @@ echo $SHELL
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 #network faill
 sh -c "$(curl -fsSL https://install.ohmyz.sh/)"
-#theme add in ~/.zshrc
+#zsh2000 theme add in ~/.zshrc
 ZSH_THEME="zsh2000"
 export ZSH_2000_DISABLE_RVM='true'
+# theme powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
 
 ## 实用命令 
